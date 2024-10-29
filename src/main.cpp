@@ -11,7 +11,7 @@ int main(){
     cout
     <<"El coqueto esta flotando?"
     <<endl;
-    
+    cout
     <<coqueto.Flotando()
     <<endl;
 }
