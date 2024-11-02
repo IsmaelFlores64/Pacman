@@ -7,8 +7,8 @@ runMem : bin/mem
 runAnimacion : bin/animacion
 	./bin/animacion
 
-runPractica : bin/prueba
-	./bin/prueba
+runExamen : bin/examen
+	./bin/examen
 
 bin/tazo: src/main.cpp
 	g++ src/main.cpp -Iinclude -o bin/tazo
@@ -19,8 +19,8 @@ bin/mem: src/memoria.cpp
 bin/animacion : src/canvas_animated.cpp
 	g++ src/canvas_animated.cpp -Iinclude -o bin/animacion -std=c++2a -lftxui-screen -lftxui-dom -lftxui-component
 
-bin/practica : src/Practica.cpp
-	g++ src/Practica.cpp -Iinclude -o bin/prueba -std=c++2a -lftxui-screen -lftxui-dom -lftxui-component
+bin/examen : src/Examen.cpp
+	g++ src/Examen.cpp -Iinclude -o bin/examen -std=c++2a -lftxui-screen -lftxui-dom -lftxui-component
 	
 assets/mensaje : bin/tazo
 	./bin/tazo > assets/mensaje
